@@ -18,21 +18,13 @@
 		"test:watch": "react-scripts test --watch"
 	},
 	"lint-staged": {
-		"*.{js,jsx}": [
-			"pretty-quick --staged",
-			"eslint src/ --fix",
-			"git add"
-		]
+		"*.{js,jsx}": [ "pretty-quick --staged", "eslint src/ --fix", "git add" ]
 	},
 	"eslintConfig": {
 		"extends": "react-app"
 	},
 	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
+		"production": [ ">0.2%", "not dead", "not op_mini all" ],
 		"jest": {
 			"collectCoverageFrom": [
 				"**/*.{js,jsx}",
@@ -51,13 +43,9 @@
 					"functions": 0,
 					"lines": 0
 				}
-			}
-		},
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
+			},
+			"snapshotSerializers": [ "enzyme-to-json/serializer" ]
+		}
 	},
 	"devDependencies": {
 		"enzyme": "^3.9.0",
@@ -74,5 +62,6 @@
 		"prettier": "^1.17.0",
 		"pretty-quick": "^1.10.0",
 		"react-test-renderer": "^16.8.6"
-	}
+	},
+	"homepage": "."
 }
